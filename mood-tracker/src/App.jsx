@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import './App.css'
+import Login from './components/Login'
+import Register from './components/Login'
 
 function App() {
   return (
     <>
-    <h1>Mood Tracker</h1>
+    <Register/>
     </>
   )
 }

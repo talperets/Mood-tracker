@@ -4,6 +4,21 @@
   padding: 2rem;
   text-align: center;
 }
+.login{
+  display: flex;
+  flex-direction: column;
+}
+input{
+  padding: 10px;
+  height: 20px;
+  border-radius: 10px;
+  border: transparent;
+  margin: 5px 0;
+}
+button{
+  margin: 5px 0;
+}
+
 
 .logo {
   height: 6em;
