@@ -28,6 +28,12 @@ button {
   border: none;
   border-radius: 300px;
 }
+button:hover{
+  border: white solid 1px;
+}
+button:active{
+  border: white solid 2px;
+}
 #angry {
   display: flex;
   justify-content: center;
@@ -39,6 +45,11 @@ button {
   justify-content: center;
   align-items: center;
   animation: nervousAnimation infinite 2.5s;
+}
+#happy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #anxious {
   display: flex;
