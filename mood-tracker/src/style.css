@@ -1,0 +1,139 @@
+
+body {
+  background-color: #222;
+  color: azure;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn-container {
+  margin-top: 20px;
+  display: grid;
+  grid: auto-flow dense / 40px 40px 1fr;
+  column-gap: 120px;
+  row-gap: 80px;
+}
+button {
+  cursor: pointer;
+  color: inherit;
+  height: 90px;
+  width: 90px;
+  font-family: inherit;
+  padding: 20px;
+  animation: baloon infinite 5s;
+  border: none;
+  border-radius: 300px;
+}
+#angry {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: angryAnimation infinite 1s;
+}
+#excited {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: nervousAnimation infinite 2.5s;
+}
+#anxious {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: angryAnimation infinite 500ms;
+}
+#sad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: baloon infinite 2s;
+}
+#calm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: calmAnimation infinite 8s;
+}
+#nervous {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: nervousAnimation infinite 1s;
+}
+#bored {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: boredAnimation infinite 4s;
+}
+#confused {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: confusedAnimation infinite 4s;
+}
+@keyframes baloon {
+  50% {
+    scale: 1.25;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+@keyframes angryAnimation {
+  50% {
+    scale: 1.25;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+@keyframes nervousAnimation {
+  25% {
+    scale: 1.25;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+@keyframes calmAnimation {
+  50% {
+    scale: 1.5;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+@keyframes boredAnimation {
+  50% {
+    scale: 1.1;
+    border-radius: 40px;
+  }
+
+  100% {
+    scale: 1;
+    border-radius: 100px;
+  }
+}
+@keyframes confusedAnimation {
+  25% {
+    rotate: 30deg;
+  }
+  50% {
+    rotate: -30deg;
+  }
+
+  100% {
+    scale: 1;
+
+    rotate: 0deg;
+  }
+}
