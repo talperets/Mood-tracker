@@ -1,4 +1,3 @@
-
 body {
   background-color: #222;
   color: azure;
@@ -17,6 +16,9 @@ body {
   column-gap: 6rem;
   row-gap: 3rem;
 }
+.title{
+  font-size: 40px;
+}
 button {
   cursor: pointer;
   color: inherit;
@@ -28,60 +30,71 @@ button {
   border: none;
   border-radius: 300px;
 }
-button:hover{
+button:hover {
   border: white solid 1px;
 }
-button:active{
+button:active {
   border: white solid 2px;
 }
 #angry {
+  background-color: red;
   display: flex;
   justify-content: center;
   align-items: center;
   animation: angryAnimation infinite 1s;
 }
 #excited {
+  background-color: orange;
+  color: #111;
   display: flex;
   justify-content: center;
   align-items: center;
   animation: nervousAnimation infinite 2.5s;
 }
 #happy {
+  color: #111;
+  background-color: #ff0095;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #anxious {
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: angryAnimation infinite 500ms;
+  animation: anxiousAnimation infinite 500ms;
 }
 #sad {
+  background-color: blue;
   display: flex;
   justify-content: center;
   align-items: center;
   animation: baloon infinite 2s;
 }
 #calm {
+  background-color: #bb5cbd;
   display: flex;
   justify-content: center;
   align-items: center;
   animation: calmAnimation infinite 8s;
 }
 #nervous {
+  background-color: green;
   display: flex;
   justify-content: center;
   align-items: center;
   animation: nervousAnimation infinite 1s;
 }
 #bored {
+  background-color: grey;
   display: flex;
   justify-content: center;
   align-items: center;
   animation: boredAnimation infinite 4s;
 }
 #confused {
+  background-color: brown;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,7 +102,7 @@ button:active{
 }
 @keyframes baloon {
   50% {
-    scale: 1.25;
+    scale: 1.1;
   }
 
   100% {
@@ -98,7 +111,16 @@ button:active{
 }
 @keyframes angryAnimation {
   50% {
-    scale: 1.25;
+    scale: 1.2;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+@keyframes anxiousAnimation {
+  50% {
+    scale: 1.1;
   }
 
   100% {
@@ -107,7 +129,7 @@ button:active{
 }
 @keyframes nervousAnimation {
   25% {
-    scale: 1.25;
+    scale: 1.1;
   }
 
   100% {
@@ -116,7 +138,7 @@ button:active{
 }
 @keyframes calmAnimation {
   50% {
-    scale: 1.5;
+    scale: 1.2;
   }
 
   100% {
@@ -136,10 +158,10 @@ button:active{
 }
 @keyframes confusedAnimation {
   25% {
-    rotate: 30deg;
+    rotate: 10deg;
   }
   50% {
-    rotate: -30deg;
+    rotate: -10deg;
   }
 
   100% {
